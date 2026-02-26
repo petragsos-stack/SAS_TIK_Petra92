@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<head>
+    <title>WEB SAS</title>
+    <link rel="stylesheet" href="penerapan.css">
+</head>
+<body>
+
+ <div id="loader">
+  <div class="loading-text">Loading...</div>
+
+  <div class="water">
+    <svg class="wave-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="waveGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="40%" stop-color="#bfe9ff"/>
+          <stop offset="70%" stop-color="#5fbfff"/>
+          <stop offset="100%" stop-color="#1fa2ff"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#waveGradient)"
+      d="M0,40 C150,100 350,0 600,50 C850,100 1050,0 1200,40 V120 H0 Z"/>
+    </svg>
+
+    <svg class="wave-svg wave2" viewBox="0 0 1200 120">
+      <path fill="url(#waveGradient)"
+      d="M0,60 C200,0 400,120 600,60 C800,0 1000,120 1200,60 V120 H0 Z"/>
+    </svg>
+
+    <svg class="wave-svg wave3" viewBox="0 0 1200 120">
+      <path fill="url(#waveGradient)"
+      d="M0,50 C180,120 420,0 600,70 C820,120 1020,10 1200,50 V120 H0 Z"/>
+    </svg>
+
+    <div class="water-fill"></div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const links = document.querySelectorAll("nav a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const loader = document.getElementById("loader");
+      loader.style.display = "flex";
+
+      const targetPage = this.getAttribute("href");
+
+      setTimeout(() => {
+        window.location.href = targetPage;
+      }, 900);
+    });
+  });
+
+});
+</script>
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <img src="header.png" alt="Banner Website" class="banner-img">
+    </header>
+
+    <!-- ================= NAVBAR ================= -->
+ <nav class="navbar">
+
+        <a href="home.html" class="nav-img-btn">
+            <img src="home.png" alt="home">
+        </a>
+
+        <a href="penerapan.html" class="nav-img-btn">
+            <img src="penerapan.png" alt="Penerapan">
+            <link rel="stylesheet" href="penerapan.css">
+        </a>
+
+        <!-- ===== DROPDOWN IMG BUTTON ===== -->
+        <div class="dropdown">
+            <button class="nav-img-btn">
+                <img src="penjelasan.png" alt="Penerapan">
+            </button>
+
+            <div class="dropdown-content">
+                <a href="pengertian.html">
+                    <img src="pengertian.png" alt="pengertian">
+                     <link rel="stylesheet" href="pengertian.css">
+                </a>
+                <a href="contoh.html">
+                    <img src="contoh.png" alt="Contoh">
+                    <link rel="stylesheet" href="contoh.css">   
+                </a>
+            </div>
+        </div>
+
+        <a href="tentangkami.html" class="nav-img-btn">
+            <img src="profile.png" alt="Profil">
+            <link rel="stylesheet" href="tentangkami.css">
+        </a>
+
+        <a href="daftarpustaka.html" class="nav-img-btn">
+            <img src="daftar pustaka.png" alt="Daftar Pustaka">
+        </a>
+
+    </nav>
+<section class="title">
+    <h1>Penerapan Pola Hidup Sehat</h1>
+</section>
+
+<section class="container">
+
+    <div class="card">
+        <p>
+        Pola hidup sehat dapat diterapkan melalui kebiasaan sederhana yang dilakukan setiap hari. 
+        Meskipun terlihat kecil, kebiasaan tersebut dapat memberikan dampak besar bagi kesehatan 
+        jika dilakukan secara konsisten.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Pagi Hari</h2>
+        <p>
+        Salah satu contoh penerapan pola hidup sehat adalah memulai hari dengan bangun pagi tepat 
+        waktu dan melakukan aktivitas ringan seperti peregangan atau olahraga ringan. Setelah itu, 
+        sarapan dengan makanan yang bergizi sangat penting untuk memberikan energi sebelum melakukan 
+        aktivitas seperti belajar di sekolah.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Saat di Sekolah</h2>
+        <p>
+        Selama berada di sekolah, pelajar dapat menerapkan pola hidup sehat dengan membawa bekal 
+        makanan yang sehat, minum air putih yang cukup, serta tetap aktif bergerak. Mengurangi 
+        konsumsi makanan cepat saji juga merupakan bagian dari penerapan pola hidup sehat.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Sore Hari</h2>
+        <p>
+        Pada sore hari, seseorang dapat melakukan olahraga seperti bersepeda, jogging, atau bermain 
+        olahraga bersama teman. Aktivitas fisik ini tidak hanya baik untuk kesehatan tubuh, tetapi 
+        juga dapat membantu mengurangi stres.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Malam Hari</h2>
+        <p>
+        Pada malam hari, penerapan pola hidup sehat dapat dilakukan dengan makan malam secukupnya, 
+        belajar dengan teratur, serta tidur tepat waktu. Mengurangi penggunaan gadget sebelum tidur 
+        juga sangat dianjurkan karena dapat membantu meningkatkan kualitas tidur.
+        </p>
+    </div>
+
+    <div class="card">
+        <p>
+        Jika kebiasaan-kebiasaan ini dilakukan setiap hari, maka tubuh akan menjadi lebih sehat, 
+        pikiran lebih fokus, dan aktivitas sehari-hari dapat dilakukan dengan lebih optimal.
+        </p>
+    </div>
+
+</section>
+
+<section class="gallery">
+    <h2>Contoh Aktivitas Sehat</h2>
+
+    <div class="image-box">
+        <img src="polahidupsehat8.webp">
+    </div>
+
+    <div class="image-box">
+        <img src="polahidupsehat9.jpg">
+    </div>
+
+    <div class="image-box">
+        <img src="polahidupsehat10.jpg">
+    </div>
+
+    <div class="image-box">
+        <img src="polahidupsehat11.jpg">
+    </div>
+
+</section>
+
+<footer>
+    <p>Website Edukasi Pola Hidup Sehat</p>
+</footer>
+
+</body>
+</html>

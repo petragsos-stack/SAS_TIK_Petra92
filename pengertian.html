@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+    <title>WEB SAS</title>
+    <link rel="stylesheet" href="pengertian.css">
+</head>
+<body>
+
+
+
+
+    <div id="loader">
+  <div class="loading-text">Loading...</div>
+
+  <div class="water">
+
+    <svg class="wave-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="waveGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="40%" stop-color="#bfe9ff"/>
+          <stop offset="70%" stop-color="#5fbfff"/>
+          <stop offset="100%" stop-color="#1fa2ff"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#waveGradient)"
+      d="M0,40 C150,100 350,0 600,50 C850,100 1050,0 1200,40 V120 H0 Z"/>
+    </svg>
+
+    <svg class="wave-svg wave2" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path fill="url(#waveGradient)"
+      d="M0,60 C200,0 400,120 600,60 C800,0 1000,120 1200,60 V120 H0 Z"/>
+    </svg>
+
+    <svg class="wave-svg wave3" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path fill="url(#waveGradient)"
+      d="M0,50 C180,120 420,0 600,70 C820,120 1020,10 1200,50 V120 H0 Z"/>
+    </svg>
+
+    <div class="water-fill"></div>
+  </div>
+</div>
+
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    const href = this.getAttribute("href");
+
+    if (href && !href.startsWith("#")) {
+      e.preventDefault();
+
+      const loader = document.getElementById("loader");
+      loader.style.display = "flex";
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 1200);
+    }
+  });
+});
+</script>
+
+
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <img src="header.png" alt="Banner Website" class="banner-img">
+    </header>
+
+    <!-- ================= NAVBAR ================= -->
+ <nav class="navbar">
+
+        <a href="home.html" class="nav-img-btn">
+            <img src="home.png" alt="home">
+        </a>
+
+        <a href="penerapan.html" class="nav-img-btn">
+            <img src="penerapan.png" alt="Penerapan">
+            <link rel="stylesheet" href="penerapan.css">
+        </a>
+
+        <!-- ===== DROPDOWN IMG BUTTON ===== -->
+        <div class="dropdown">
+            <button class="nav-img-btn">
+                <img src="penjelasan.png" alt="Penjelasan">
+            </button>
+
+            <div class="dropdown-content">
+                <a href="pengertian.html">
+                    <img src="pengertian.png" alt="pengertian">
+                    <link rel="stylesheet" href="pengertian.css">   
+                </a>
+                <a href="contoh.html">
+                    <img src="contoh.png" alt="Contoh">
+                    <link rel="stylesheet" href="contoh.css">
+                </a>
+            </div>
+        </div>
+
+        <a href="tentangkami.html" class="nav-img-btn">
+            <img src="profile.png" alt="Profil">
+            <link rel="stylesheet" href="tentangkami.css">
+        </a>
+
+        <a href="daftarpustaka.html" class="nav-img-btn">
+            <img src="daftar pustaka.png" alt="Daftar Pustaka">
+        </a>
+
+    </nav>
+
+<section class="title">
+    <h1>Pengertian Pola Hidup Sehat</h1>
+</section>
+
+<section class="container">
+
+    <div class="text-box">
+        <p>
+        Pola hidup sehat adalah cara hidup yang dilakukan seseorang secara sadar untuk menjaga kesehatan tubuh, pikiran, dan keseimbangan kehidupan sehari-hari. Pola hidup sehat tidak hanya berfokus pada makanan yang dikonsumsi, tetapi juga mencakup berbagai kebiasaan baik seperti olahraga, istirahat yang cukup, menjaga kebersihan, serta menjaga kesehatan mental.
+        </p>
+
+        <p>
+        Pola hidup sehat sangat penting diterapkan sejak usia remaja karena pada masa ini tubuh sedang mengalami pertumbuhan dan perkembangan. Jika seseorang memiliki kebiasaan hidup yang sehat sejak dini, maka tubuh akan lebih kuat, tidak mudah sakit, dan memiliki energi yang cukup untuk melakukan aktivitas sehari-hari seperti belajar, berolahraga, dan bersosialisasi.
+        </p>
+
+        <p>
+        Secara umum, pola hidup sehat meliputi beberapa aspek utama, yaitu pola makan sehat, aktivitas fisik yang cukup, tidur yang teratur, serta menjaga kesehatan mental. Pola makan sehat berarti mengonsumsi makanan yang memiliki kandungan gizi seimbang seperti karbohidrat, protein, vitamin, dan mineral. Aktivitas fisik seperti olahraga membantu menjaga kebugaran tubuh dan meningkatkan daya tahan tubuh. Selain itu, tidur yang cukup juga sangat penting karena saat tidur tubuh melakukan proses pemulihan dan perbaikan sel-sel tubuh.
+        </p>
+
+        <p>
+        Selain kesehatan fisik, kesehatan mental juga merupakan bagian penting dari pola hidup sehat. Seseorang yang memiliki kesehatan mental yang baik biasanya mampu mengelola stres dengan baik, memiliki pikiran yang positif, serta mampu menjalani aktivitas sehari-hari dengan lebih semangat.
+        </p>
+
+        <p>
+        Dengan menerapkan pola hidup sehat secara konsisten, seseorang dapat meningkatkan kualitas hidupnya dan mengurangi risiko terkena berbagai penyakit seperti obesitas, penyakit jantung, dan diabetes.
+        </p>
+    </div>
+
+</section>
+
+<section class="gallery">
+    <h2>Contoh Pola Hidup Sehat</h2>
+
+    <div class="image-box">
+        <img src="polahidupsehat4.jpg">
+    </div>
+
+    <div class="image-box">
+        <img src="polahidupsehat5.jpg">
+    </div>
+
+    <div class="image-box">
+        <img src="polahidupsehat6.jpg">
+    </div>
+
+    <div class="image-box">
+        <img src="polahidupsehat7.jpg">
+    </div>
+
+</section>
+
+<footer>
+    <p>Website Edukasi Pola Hidup Sehat</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Pustaka</title>
+    <link rel="stylesheet" href="daftarpustaka.css">
+</head>
+<body>
+
+<!-- ================= LOADING PAGE ================= -->
+<div id="loader">
+  <div class="loading-text">Loading...</div>
+
+  <div class="water">
+    <svg class="wave-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="waveGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#ffffff"/>
+          <stop offset="40%" stop-color="#bfe9ff"/>
+          <stop offset="70%" stop-color="#5fbfff"/>
+          <stop offset="100%" stop-color="#1fa2ff"/>
+        </linearGradient>
+      </defs>
+      <path fill="url(#waveGradient)"
+      d="M0,40 C150,100 350,0 600,50 C850,100 1050,0 1200,40 V120 H0 Z"/>
+    </svg>
+
+    <svg class="wave-svg wave2" viewBox="0 0 1200 120">
+      <path fill="url(#waveGradient)"
+      d="M0,60 C200,0 400,120 600,60 C800,0 1000,120 1200,60 V120 H0 Z"/>
+    </svg>
+
+    <svg class="wave-svg wave3" viewBox="0 0 1200 120">
+      <path fill="url(#waveGradient)"
+      d="M0,50 C180,120 420,0 600,70 C820,120 1020,10 1200,50 V120 H0 Z"/>
+    </svg>
+
+    <div class="water-fill"></div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const links = document.querySelectorAll("nav a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      const loader = document.getElementById("loader");
+      loader.style.display = "flex";
+
+      const targetPage = this.getAttribute("href");
+
+      setTimeout(() => {
+        window.location.href = targetPage;
+      }, 900);
+    });
+  });
+
+});
+</script>
+
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <img src="header.png" alt="Banner Website" class="banner-img">
+</header>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+
+    <a href="home.html" class="nav-img-btn">
+        <img src="home.png" alt="home">
+    </a>
+
+    <a href="penerapan.html" class="nav-img-btn">
+        <img src="penerapan.png" alt="Penerapan">
+    </a>
+
+    <div class="dropdown">
+        <button class="nav-img-btn">
+            <img src="penjelasan.png" alt="Penjelasan">
+        </button>
+
+        <div class="dropdown-content">
+            <a href="pengertian.html">
+                <img src="pengertian.png" alt="pengertian">
+            </a>
+            <a href="contoh.html">
+                <img src="contoh.png" alt="Contoh">
+            </a>
+        </div>
+    </div>
+
+    <a href="tentangkami.html" class="nav-img-btn">
+        <img src="profile.png" alt="Profil">
+    </a>
+
+    <a href="daftarpustaka.html" class="nav-img-btn">
+        <img src="daftar pustaka.png" alt="Daftar Pustaka">
+    </a>
+
+</nav>
+
+
+<!-- ================= CONTENT ================= -->
+<section class="content">
+    <h1>Daftar Pustaka</h1>
+
+    <ul class="pustaka-list">
+        <li>Kementerian Kesehatan Republik Indonesia. (2023). <i>Panduan Gaya Hidup Sehat.</i></li>
+        <li>World Health Organization (WHO). <i>Healthy Lifestyle Guidelines.</i></li>
+        <li>Alodokter. <i>Pentingnya Pola Hidup Sehat bagi Remaja.</i></li>
+        <li>Halodoc. <i>Tips Menjaga Kesehatan Tubuh.</i></li>
+        <li>Buku Pendidikan Jasmani dan Kesehatan SMP.</li>
+    </ul>
+</section>
+
+</body>
+</html>
